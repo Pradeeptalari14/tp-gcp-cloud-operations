@@ -1,0 +1,10 @@
+{
+  "studioName": "GCP Cloud Operations Monitoring Studio",
+  "version": "1.0.0",
+  "status": "operational",
+  "environment": "staging",
+  "config": {
+    "execution": "gcloud monitoring dashboards create --config-from-file=metrics_dashboard.json",
+    "validation": "gcloud monitoring dashboards list"
+  }
+}
